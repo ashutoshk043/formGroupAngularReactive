@@ -1,0 +1,9 @@
+.conatiner{
+    text-align: center;
+    border: 2px solid #d14c4c;
+    max-width: 200px;
+}
+form{
+    border: 2px solid #000;
+    margin: 1px;
+}

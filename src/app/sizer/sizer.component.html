@@ -1,0 +1,31 @@
+<h1>{{ title }}</h1>
+
+<div class="conatiner">
+  <form [formGroup]="data" (ngSubmit)="findValue()">
+    firstName: <input type="text" formControlName="firstName" /> <br /><br />
+
+    lastName:<input type="text" formControlName="lastName" /> <br /><br />
+
+    email:<input type="text" formControlName="email" /> <br /><br />
+
+    <select formControlName="country">
+      <option value="">Selct Country</option>
+      <option value="India">India</option>
+      <option value="USA">USA</option></select
+    ><br /><br />
+
+    Male: <input type="radio" formControlName="gender" value="Male" /> Female:
+    <input type="radio" formControlName="gender" value="Female" /><br /><br />
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+    <label for="vehicle1"> I have a bike</label><br />
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+    <label for="vehicle2"> I have a car</label><br />
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+    <label for="vehicle3"> I have a boat</label><br /><br />
+
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+{{ formData | json }}
